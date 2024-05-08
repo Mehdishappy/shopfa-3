@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه ساز شاپفا</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <svg class="hidden">
+        <symbol id="user-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </symbol> 
+          <symbol id="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </symbol>     
+          <symbol id="log-in" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+          </symbol> 
+          <symbol id="user-plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+          </symbol>
+          <symbol id="speed-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </symbol>
+          <symbol  id="leaf" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+          </symbol>
+          <symbol id="dollar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </symbol>
+          <symbol id="lock" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+          </symbol>
+          <symbol id="support" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+          </symbol>
+          <symbol id="analyze" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+          </symbol>
+          <symbol id="transfer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </symbol>
+          <symbol id="credit-card" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+          </symbol>
+          <symbol id="developee" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+          </symbol>
+          <symbol id="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+          </symbol>
+          <symbol id="check-badge" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+          </symbol>
+                   
+          
+          
+          
+          
+                 
+    </svg>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <img src="./Public/logo-b.svg" alt="" class="logo">
+            </div>
+            <div class="header-menu">
+                <a class="header__link" href="#">فروشگاه ساز</a>
+                <a class="header__link" href="#price">قیمت</a>
+                <a class="header__link" href="#fourth-page">امکانات</a>
+                <a class="header__link" href="#">نمونه کارها</a>
+                <a class="header__link" href="#">قالب ها</a>
+            </div>
+            <div class="header-last-part">
+                <div class="header__dropdown">
+                    <svg class="user__icon">
+                        <use href="#user-icon"></use>
+                    </svg>
+                    <svg class="drop__icon">
+                        <use href="#chevron-down"></use>
+                    </svg>
+                    <div class="dropdown__menu">
+                        <div class="login__menu_icon">
+                            <a href="#">
+                                    <svg class="login">
+                                        <use href="#log-in">log-in</use>
+                                    </svg>
+                                    <span>ورود</span>
+                            </a>
+                        </div>
+                        <div class="user__plus-icon">
+                            <a href="#">
+                                <svg class="login">
+                                    <use href="#user-plus">log-in</use>
+                                </svg>
+                                <span>ثبت نام</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__button">
+                    <button class="last_button">ساخت فروشگاه</button>
+                </div>
+            </div>
+        </div>
+        <div class="line-1"></div>
+    </header>
+    <div class="container">
+        <section class="first-page">
+            <div class="text-area">
+                <div class="first-page__title">
+                    <h3 class="title">فروشگاه ساز <b>شاپفا</b></h3>
+                    <h4 class="desc">سریع و آسان فروشگاه آنلاین بساز!</h4>
+                </div>
+                <div class="first-page__desc">
+                    <p class="desc__">
+                        امکانات ما در شاپفا به شما کمک می‌کند تا با کمترین دانش فنی و در سریع‌ترین زمان ممکن فروشگاه آنلاین خود را بسازید و وارد دنیای تجارت الکترونیک شوید.
+                    </p>
+                    <p class="desc__">
+                        شاپفا متناسب با بازار ایران توسعه پیدا کرده و کلیه امکانات با توجه به نیاز بازار ایران بهینه سازی شده تا شما بتوانید به راحت‌ترین حالت ممکن یک فروشگاه با تعداد فروش روزانه بالا را مدیریت کنید.
+                    </p>
+                    <p class="desc__">
+                        در تمام مسیر تیم شاپفا با پیشتیبانی دائمی و مشاوره‌ حرفه‌ای در کنار شما خواهند بود تا بتوانید فروش خود را آغاز و پیشرفت کنید.
+                    </p>
+                    <p class="desc__">
+                        هنوز تصمیم نگرفتید؟
+                    </p>
+                    <p class="desc__">
+                        بدون تجربه قبلی، رایگان و فقط با یک ایمیل، فروشگاه خود را بسازید
+                    </p>
+                </div>
+                <div class="first-page__btn">
+                    <button class="first__btn">7 روز تست رایگان</button>
+                    <button class="first__btn__sec">مشاور حرفه ای</button>
+                </div>
+            </div>
+            <div class="first-page__img">
+                <img src="./Public/intro04.webp" alt="" class="first-page___img">
+            </div>
+        </section>
+        <section class="second-page">
+            <div class="second-page__title__">
+                <h3 class="second-page__title">ساخت فروشگاه اینترنتی </h3>
+                <h6 class="second-page__desc">با امکانات بی‌نظیر شاپفا کسب و کار خود را آنلاین کنید </h6>
+            </div>
+            <div class="second-page__flex">
+                <div class="second-page_box">
+                    <img src="./Public/snippet-content-5-1.webp" alt="" class="second-page_box__img">
+                    <div class="second-page__ppp">
+                        <p class="second-page_box__p">راه اندازی فروشگاه اینترنتی</p>
+                        <p class="second-page_box__pp">دامنه ، هاست، ssl و cdn</p>
+                    </div>
+                </div>
+                <div class="second-page_box">
+                    <img src="./Public/snippet-content-5-2.webp" alt="" class="second-page_box__img">
+                    <div class="second-page__ppp">
+                        <p class="second-page_box__p">طراحی سایت فروشگاهی</p>
+                        <p class="second-page_box__pp">تنوع بی نظیر از قالب و نمونه کار</p>
+                    </div>
+                </div>
+                <div class="second-page_box">
+                    <img src="./Public/snippet-content-5-3.webp" alt="" class="second-page_box__img">
+                    <div class="second-page__ppp">
+                        <p class="second-page_box__p">سئو سایت فروشگاهی</p>
+                        <p class="second-page_box__pp">حضور در صدر نتایج جستجو </p>
+                    </div>
+                </div>
+                <div class="second-page_box">
+                    <img src="./Public/snippet-content-5-4.webp" alt="" class="second-page_box__img">
+                    <div class="second-page__ppp">
+                        <p class="second-page_box__p">بازاریابی و فروش</p>
+                        <p class="second-page_box__pp">اتصال به ترب و دیجی کالا </p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-page__last-btn">
+                <p class="second-page__last-btn-p">بیش از 200 امکان و ویژگی برای فروشگاه اینترنتی</p>
+                <button class="second-page__last-btn__">امکانات فروشگاهی </button>
+            </div>
+        </section>
+        <section class="third-page">
+            <div class="third-page__title__">
+                <h3 class="second-page__title">شاپفا مورد اعتماد بیش از ۱۰۰۰+ کسب و کار</h3>
+                <h6 class="second-page__desc">همین حالا فروشگاه اینترنتی خود را، سریع و بدون نیاز به دانش فنی با شاپفا بسازید!</h6>
+            </div>
+            <div class="third-page__brands">
+                <img src="./Public/6407115.webp" alt="" class="third-page__brands__img">
+                <img src="./Public/6407116.webp" alt="" class="third-page__brands__img">
+                <img src="./Public/6407097.webp" alt="" class="third-page__brands__img">
+                <img src="./Public/6407099.webp" alt="" class="third-page__brands__img">
+            </div>
+            <div class="third-page__btn">
+                <button class="first__btn">نمونه کارها</button>
+                <button class="first__btn__sec">قالب ها</button>
+            </div>
+        </section>
+        <section id="fourth-page" class="fourth-page">
+            <div class="third-page__title__">
+                <h3 class="second-page__title" style="margin-bottom: 50px;">مزیت های استفاده از فروشگاه ساز شاپفا </h3>
+            </div>
+            <div class="fourth-page_box____row">
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">سادگی و سرعت</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#speed-icon"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">شاپفا به شما این امکان را می‌دهد که بدون نیاز به دانش فنی پیشرفته، یک فروشگاه آنلاین راه‌اندازی کنید.</p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">قدرت انعطاف‌پذیری</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#leaf"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">شاپفا انواع مختلفی از قالب‌ها و افزونه‌ها را پشتیبانی می‌کند که به شما اجازه می‌دهد فروشگاه خود را به سلیقه شخصی خود تنظیم کنید. </p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">هزینه پایین</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#dollar"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">در مقایسه با برنامه نویسی یک وبسایت از ابتدا، استفاده از یک سیستم فروشگاه‌ساز مانند شاپفا همیشه کم هزینه‌تر است.</p>
+                </div>
+            </div>
+            <div class="fourth-page_box____row">
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">امنیت بالا</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#lock"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">شاپفا همیشه به روزرسانی‌ها و پشتیبانی امنیتی مستمر را ارائه می‌دهد.</p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">پشتیبانی آنلاین</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#support"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">در صورت بروز مشکل، شاپفا یک تیم پشتیبانی قوی دارد که در کنار شما خواهد بود.</p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">ابزارهای تجزیه و تحلیل</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#analyze"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">شاپفا ابزارهای قدرتمندی برای تجزیه و تحلیل ترافیک و فروش فراهم می‌کند.</p>
+                </div>
+            </div>
+            <div class="fourth-page_box____row">
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">انتقال آسان</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#transfer"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">اگر بخواهید به سیستم دیگری انتقال پیدا کنید، شاپفا امکانات مناسبی برای انتقال داده‌ها و محتوا فراهم می‌کند.</p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">پرداخت آسان</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#credit-card"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">شاپفا با اکثر درگاه‌های پرداخت اینترنتی معتبر سازگار است.</p>
+                </div>
+                <div class="fourth-page_box__">
+                    <div class="fourth-page_box__row">
+                        <p class="fourth-page_box__row__title">توسعه مداوم</p>
+                        <svg class="fourth-page_box__row_svg">
+                            <use href="#developee"></use>
+                        </svg>
+                    </div>
+                    <p class="fourth-page_box__row_text">این سیستم به صورت مداوم در حال به‌روزرسانی و افزایش قابلیت‌ها است.</p>
+                </div>
+            </div>
+            <div class="second-page__last-btn">
+                <p class="second-page__last-btn-p">همین حالا امکانات شاپفا رو تست کن و مقایسه کن!</p>
+                <button class="second-page__last-btn__">7 روز رایگان تست کنید</button>
+            </div>
+        </section>
+        <section style="margin-top: 140px;" class="first-page">
+            <div class="text-area">
+                <div class="first-page__title">
+                    <h4 class="desc">ده‌ها برنامه کاربردی برای فروشگاه شما</h4>
+                </div>
+                <div class="first-page__desc">
+                    <p class="desc__">
+                        شاپفا با ده‌ها برنامه کاربردی به کسب و کار شما کمک می‌کند تا کلیه امکانات لازم برای رقابت در بازار فروشگاهی ایران را دارا باشد. انواع اپلیکیشن های پرداخت و بازاریابی در اختیار شماست تا بتوانید به سرعت فروش سایت خود را افزایش دهید.
+                    </p>
+                    <p class="desc__">
+                        توسعه بخش برنامه‌ها در فروشگاه ساز ما همیشه ادامه دارد تا بروزرترین و حرفه‌ای ترین امکانات در اختیار فروشگاه شما قرار بگیرد.
+                    </p>
+                </div>
+                <div class="first-page__btn">
+                    <button class="first__btn">7 روز تست رایگان</button>
+                    <button class="first__btn__sec">مشاور رایگان</button>
+                </div>
+            </div>
+            <div class="first-page__img">
+                <img style="width: 400px; height: 400px;" src="./Public/5img.png" alt="" class="first-page___img">
+            </div>
+        </section>
+        <section id="price" class="fifth-page">
+            <div class="third-page__title__">
+                <h3 class="second-page__title">رایگان شروع کنید</h3>
+                <h6 class="second-page__desc">تعرفه فروشگاه ساز شاپفا</h6>
+            </div>
+            <div class="fifth-page-row">
+                <div class="fifth-page-row__box">
+                    <img src="./Public/plan-1.svg" alt="" class="row__box">
+                    <div class="row____desc">
+                        <h2 class="row__title">کاربردی</h2>
+                        <p class="row__descccc">کسب و کارهای جدید و صفحات اینستاگرامی</p>
+                    </div>
+                    <div class="row__circle">
+                        <p class="circle__price">4.8</p>
+                        <p class="circle__desc">میلیون تومان/ <span class="circle__year">در سال</span></p>
+                    </div>
+                </div>
+                <div class="fifth-page-row__box">
+                    <img src="./Public/plan-2.svg" alt="" class="row__box">
+                    <div class="row____desc">
+                        <h2 class="row__title">حرفه‌ای</h2>
+                        <p class="row__descccc">کسب و کارهای در حال توسعه و اصناف</p>
+                    </div>
+                    <div class="row__circle">
+                        <p class="circle__price">6.8</p>
+                        <p class="circle__desc">میلیون تومان/ <span class="circle__year">در سال</span></p>
+                    </div>
+                </div>
+                <div class="fifth-page-row__box">
+                    <img src="./Public/plan-3.svg" alt="" class="row__box">
+                    <div class="row____desc">
+                        <h2 class="row__title">پیشرفته</h2>
+                        <p class="row__descccc">فروشگاه های اینترنتی با تنوع بالای محصول و دسته</p>
+                    </div>
+                    <div class="row__circle">
+                        <p class="circle__price">14.8</p>
+                        <p class="circle__desc">میلیون تومان/ <span class="circle__year">در سال</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-page__last-btn">
+                <p class="fifth-page__last-btn-p">نیازی به پرداخت هزینه نیست، رایگان شروع کنید...</p>
+                <div class="fifth__btns">
+                    <button class="fifth-page__last-btn__">تست رایگان</button>
+                    <button class="fifth-page__last-btn__">مقایسه پلن ها</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="sixth-page">
+        <div class="container">
+            <div class="third-page__title__">
+                <h3 class="second-page__title">مشتریان شاپفا</h3>
+                <h6 class="second-page__desc">به بیش از ۹۰۰ فروشگاه طراحی شده با فروشگاه ساز شاپفا ملحق شوید</h6>
+            </div>
+            <div class="sixth_img">
+                <img src="./Public/dsdsdds.png" alt="" class="sixth-page__img">
+            </div>
+            <div class="third-page__btn">
+                <button class="first__btn">نمونه کارها</button>
+                <button class="sixth-page__last-btn__">قالب ها</button>
+            </div>
+        </div>
+    </section>
+    <section class="container seventh-page">
+        <div class="seventh-content">
+            <img src="./Public/market-banner_577x.webp" alt="" class="seventh-page">
+            <div class="text-area">
+                <div class="first-page__title">
+                    <h4 class="desc">به رتبه های برتر در نتایج جستجو برسید</h4>
+                </div>
+                <div class="first-page__desc">
+                    <p class="desc__">
+                        رعایت استانداردهای سئو و تجربه کاربری تخصص شاپفاست. کدهای بهینه، سرعت بالا در کنار سادگی و زیبایی مسیر رسیدن شما به رتبه های برتر در نتایج جستجو است.
+                    </p>
+                </div>
+                <button class="sixth-page__last-btn__">امکانات سئو</button>
+        </div>
+    </section>
+    <section class="eighth-page">
+        <div class="container">
+            <div class="eighth-flex">
+                <div class="text-area">
+                    <div class="first-page__title">
+                        <h4 class="desc">اپلیکیشن فروشگاه اینترنتی؛ اختصاصی و رایگان!</h4>
+                    </div>
+                    <div class="first-page__desc">
+                        <p class="desc__">
+                            ساخت اپلیکیشن اندرویدی هم زمان با ساخت فروشگاه و با قابلیت انتشار در گوگل پلی و بازار.
+                        </p>
+                    </div>
+                </div>
+                <button class="eighth-page__last-btn__">دانلود نمونه اپلیکیشن</button>
+            </div>
+        </div>
+    </section>
+    <section class="ninth-page">
+        <div class="container">
+            <div class="ninth-first-part">
+                <div class="text-area">
+                    <div class="first-page__title">
+                        <h4 class="desc">از ترب تا گوگل آنالیتیکس</h4>
+                    </div>
+                    <div class="first-page__desc">
+                        <p class="desc__">
+                            به راحتی فروشگاه اینترنتی خود را به ابزارهای بازاریابی و همکاری در فروش متصل کنید. شاپفا راهکارهای اختصاصی برای ارتباط با ابزارهای منتخب داخلی و خارجی ار ائه می کند.
+                        </p>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-row__item">
+                            <p class="service-row__name">Google Search Console</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                        <div class="service-row__item">
+                            <p class="service-row__name">Google Analytics</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-row__item">
+                            <p class="service-row__name">Google Tag Manager</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                        <div class="service-row__item">
+                            <p class="service-row__name">Google Ads</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="first-page__btn">
+                        <button class="sixth-page__last-btn__">بازاریابی و فروش</button>
+                    </div>
+                </div>
+                <div class="first-page__img">
+                    <img src="./Public/banner-google_577x.webp" alt="" class="ninth-page___img">
+                </div>
+            </div>
+            <div class="ninth-first-part">
+                <div class="ninthh-page__img">
+                    <img src="./Public/panel-banner_577x.webp" alt="" class="ninthh-page___img">
+                </div>
+                <div class="text-area">
+                    <div class="first-page__title">
+                        <h4 class="desc">حسابداری و انبارداری، ساده تر از هلو</h4>
+                    </div>
+                    <div class="first-page__desc">
+                        <p class="desc__">
+                            شاپفا شما را از خرید نرم افزارهای جانبی برای حسابداری و انبارداری بی نیاز می کند. با ابزارهای ساده و کاربردی نظارت دقیقی بر عملکرد فروشگاه و کنترل هزینه ها خواهید داشت.
+                        </p>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-row__item">
+                            <p class="service-row__name">انبارداری پیشرفته</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                        <div class="service-row__item">
+                            <p class="service-row__name">سیستم بارکد و خروج مکانیزه</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="services-row">
+                        <div class="service-row__item">
+                            <p class="service-row__name">سیستم تهیه لیست خرید</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                        <div class="service-row__item">
+                            <p class="service-row__name">سیستم حسابداری با تامین کننده‌ها</p>
+                            <svg class="service-row__svg">
+                                <use href="#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="first-page__btn">
+                        <button class="sixth-page__last-btn__">حسابداری</button>
+                        <button class="sixth-page__last-btn__">انبارداری</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ninth-first-part">
+                <div class="text-area">
+                    <div class="first-page__title">
+                        <h4 class="desc">تنوع بالا در روش ارسال</h4>
+                    </div>
+                    <div class="first-page__desc">
+                        <p class="desc__">
+                            تنوع بالا در روش های ارسال و دریافت وجه از مشتریان را تجربه کنید. پست، پیک موتوری، تیپاکس، الوپیک و باربری را به مشتریان خود پیشنهاد دهید و هزینه ارسال را متناسب با روش ارسال محاسبه کنید.
+                        </p>
+                    </div>
+                    <div class="first-page__btn">
+                        <button class="sixth-page__last-btn__">ارسال محصولات</button>
+                    </div>
+                </div>
+                <div class="first-page__img">
+                    <img src="./Public/post_577x.webp" alt="" class="ninth-page___img">
+                </div>
+            </div>
+            <div class="third-page__title__">
+                <h3 class="second-page__title">38 درگاه پرداخت آنلاین تا این لحظه!</h3>
+                <h6 class="second-page__desc">مجموعه ی گسترده ای از درگاههای مستقیم و واسط در دسترس شما هستند تا به سرعت فروشتان را شروع کنید</h6>
+            </div>
+            <div class="third-page__brands">
+                <img src="./Public/idpay-logo.jpg" alt="" class="ninth-page__brands__img">
+                <img src="./Public/com.ada.mbank.mehr_512x512.webp" alt="" class="ninth-page__brands__img">
+                <img src="./Public/images (1).png" alt="" class="ninth-page__brands__img">
+                <img src="./Public/images.png" alt="" class="ninth-page__brands__img">
+            </div>
+            <div class="ninth-page-check__row">
+                <div class="check_part">
+                    <svg class="check-badge">
+                        <use href="#check-badge"></use>
+                    </svg>
+                    <p class="check-desc">پرداخت مستقیم بانکی</p>
+                </div>
+                <div class="check_part">
+                    <svg class="check-badge">
+                        <use href="#check-badge"></use>
+                    </svg>
+                    <p class="check-desc">اتصال به درگاه واسط</p>
+                </div>
+                <div class="check_part">
+                    <svg class="check-badge">
+                        <use href="#check-badge"></use>
+                    </svg>
+                    <p class="check-desc">پرداخت در محل</p>
+                </div>
+            </div>
+            <div class="fifth-page__last-btn">
+                <div class="ninth-page__last-btn">
+                    <p class="fifth-page__last-btn-p">اپلیکیشن فروشگاه اینترنتی؛ اختصاصی و رایگان!</p>
+                    <p class="ninth-page__last-btn-p">ساخت اپلیکیشن اندرویدی هم زمان با ساخت فروشگاه و با قابلیت انتشار در گوگل پلی و بازار.</p>
+                </div>
+                <div class="fifth__btns">
+                    <button class="second-page__last-btn__">نمونه اپلیکیشن</button>
+                </div>
+            </div>
+            <div class="third-page__title__">
+                <h3 class="second-page__title">کسب و کار اینترنتی</h3>
+                <h6 class="second-page__desc">آموزش‌های کاربردی برای راه‌اندازی و مدیریت کسب و کار اینترنتی</h6>
+            </div>
+            <div class="blog-cart-row">
+                <div class="ninth-cart">
+                    <img src="./Public/9104480.webp" alt="" class="cart-img">
+                    <div class="cart-desc">
+                        <p class="cart-title">معرفی دو روش کسب درآمد از فروش اینترنتی کالاهای دست دوم</p>
+                        <p class="cart-description">در قدیم هم که مردم خیلی استقبال نمی‌کردند، خرید و فروش کالاهای دست دوم خیلی سود داشت. چه برسد به حالا که همه‌چیز فرق کرده است. در چند سال ...</p>
+                    </div>
+                    <!-- <div class="cart-line"></div> -->
+                    <div class="author-part">
+                        <div class="author-pfp">
+                            <img src="./Public/284503.webp" alt="" class="author">
+                        </div>
+                        <p class="author-date">اردیبهشت 1403</p>
+                    </div>
+                </div>
+                <div class="ninth-cart">
+                    <img src="./Public/9109305.webp" alt="" class="cart-img">
+                    <div class="cart-desc">
+                        <p class="cart-title">چگونه پرامپت های اصولی بنویسیم؟ نکات طلایی</p>
+                        <p class="cart-description">آیا تابه‌حال سری به ابزارهای هوش مصنوعی زده‌اید؟ موفق شدید پاسخ دلخواه‌تان را آن‌ها بگیرید؟ یا شما هم به این نتیجه رسیده‌اید که ...</p>
+                    </div>
+                    <!-- <div class="cart-line"></div> -->
+                    <div class="author-part">
+                        <div class="author-pfp">
+                            <img src="./Public/284503.webp" alt="" class="author">
+                        </div>
+                        <p class="author-date">اردیبهشت 1403</p>
+                    </div>
+                </div>
+                <div class="ninth-cart">
+                    <img src="./Public/9099651.webp" alt="" class="cart-img">
+                    <div class="cart-desc">
+                        <p class="cart-title">چگونه صفحه قوانین و مقررات سایت را بنویسیم؟</p>
+                        <p class="cart-description">از قدیم گفتند: «جنگ اول به از صلح آخر». صفحه قوانین و مقررات هم مصداق همین ضرب‌المثل است. شما یک بار برای نوشتن این صفحه وقت می‌گذارید ...</p>
+                    </div>
+                    <!-- <div class="cart-line"></div> -->
+                    <div class="author-part">
+                        <div class="author-pfp">
+                            <img src="./Public/284503.webp" alt="" class="author">
+                        </div>
+                        <p class="author-date">اردیبهشت 1403</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ninth__blog__btn">
+                <button class="ninth__btn__sec">آرشیو مقالات</button>
+            </div>
+        </div>
+    </section>
+    
+        
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="./Public/logo-b.svg" alt="" class="footer-logo__">
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-row">
+                <div class="footer-row__list">
+                    <a href="#">کانال اطلاع رسانی</a>
+                    <a href="#">کانال آموزشی</a>
+                    <a href="#">تلگرام</a>
+                    <a href="#">اینستاگرام</a>
+                    <a href="tel:02167954">021-67954</a>
+                    <a href="#">پشتیبانی سایت</a>
+                </div>
+                <div class="footer-row__list">
+                    <a href="#">ساخت فروشگاه اینترنتی</a>
+                    <a href="#">درباره ما</a>
+                    <a href="#">نمونه کارها</a>
+                    <a href="#">قوانین و مقررات</a>
+                    <a href="#">وبلاگ</a>
+                </div>
+                <div class="footer-row__list">
+                    <a href="#">طراحی فروشگاه اینترنتی</a>
+                    <a href="#">درخواست مشاوره</a>
+                    <a href="#">قالب ها</a>
+                    <a href="#">پرسش و پاسخ</a>
+                </div>
+                <div class="footer-row__list">
+                    <a href="#">تماس با ما</a>
+                    <a href="#">فرصت های شغلی</a>
+                    <a href="#">قیمت ها</a>
+                    <a href="#">پشتیبانی</a>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-credit">
+                <p class="credit-footer__">1391-1403</p>
+                <p class="credit-footer__">تمامی حقوق برای شاپفا محفوظ است</p>
+                <p class="credit-footer__">بازطراحی قالب توسط <a href="https://www.instagram.com/m3edibtw/">مهدی برزگر</a></p>
+                <p class="credit-footer__">بازطراحی صرفا جهت اهداف آموزشی انجام شده است</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
