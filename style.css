@@ -1122,7 +1122,11 @@ footer {
     .cart-desc {
         height: 163px;
     }
-
+	
+    .first-page___img {
+	width: 350px;
+    }
+	
     .cart-title {
         font-size: 21px;
     }
