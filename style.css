@@ -962,7 +962,11 @@ footer {
 }
 
 @media screen and (max-width:760px) {
-    
+
+    * {
+        cursor: default !important;
+    }
+	
     .header__link {
         font-size: 12px;
     }
@@ -1101,6 +1105,15 @@ footer {
 
     .second-page_box {
         margin-bottom: 40px;
+    }
+
+    .third-page__brands {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-page__brands__img {
+        width: 30%;
     }
 
     .fifth-page-row {
